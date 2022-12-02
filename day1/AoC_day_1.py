@@ -7,7 +7,7 @@ def parse_elves():
     tmp = []
     escaped = "\n"
     totals = {}
-    elf_num = 0
+    elf_num = 1
     # Open the text file contining the challenge inputs
     with open(f'{infile}', 'r') as fin:
         for line in fin: # Parse the file line by line
@@ -25,13 +25,13 @@ def parse_elves():
             total += elf[i]
         totals[elf_num] = total # Add the total calories of each elf to a dict with their corresponding number
         elf_num += 1
+    [print(key,':',value) for key, value in totals.items()] # Prints all dict keys and values
 
     # Uncomment one answer code block at a time to see the output
     #####################
     ### Part 1 answer ###
     #####################
     # most_cal = max(totals.items(), key=lambda x: x[1]) # Finds the highest calorie value in the dict
-    # # [print(key,':',value) for key, value in totals.items()] # Prints all dict keys and values
     # print(f'\n{most_cal}') # Prints out the elf with the most calories and the amount of calories
     
     #####################
