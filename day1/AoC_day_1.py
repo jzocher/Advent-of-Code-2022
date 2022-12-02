@@ -25,10 +25,25 @@ def parse_elves():
             total += elf[i]
         totals[elf_num] = total # Add the total calories of each elf to a dict with their corresponding number
         elf_num += 1
-    most_cal = max(totals.items(), key=lambda x: x[1]) # Finds the highest calorie value in the dict
-    # [print(key,':',value) for key, value in totals.items()] # Prints all dict keys and values
-    print(f'\n{most_cal}') # Prints out the elf with the most calories and the amount of calories
 
+    # Uncomment one answer code block at a time to see the output
+    #####################
+    ### Part 1 answer ###
+    #####################
+    # most_cal = max(totals.items(), key=lambda x: x[1]) # Finds the highest calorie value in the dict
+    # # [print(key,':',value) for key, value in totals.items()] # Prints all dict keys and values
+    # print(f'\n{most_cal}') # Prints out the elf with the most calories and the amount of calories
+    
+    #####################
+    ### Part 2 Answer ###
+    #####################
+    # x=list(totals.values())
+    # x.sort(reverse=True)
+    # x=x[:3]
+    # top_3_total = 0
+    # for i in x:
+    #     top_3_total += i
+    # print(top_3_total)
 
 if __name__ == "__main__":
     parse_elves()
