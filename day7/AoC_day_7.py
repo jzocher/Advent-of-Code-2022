@@ -1,4 +1,4 @@
-# Majority of coode for this day by /u/aaegic (reddit)
+# Majority of code for this day by /u/aaegic (reddit)
 import re
 
 infile = "AoC_day_7_input.txt"
